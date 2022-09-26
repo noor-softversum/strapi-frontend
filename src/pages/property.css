@@ -1,0 +1,55 @@
+/* .property-detail {
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    background: #8e2ad6;;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 50px;
+    width: 100%;
+    align-items: center;
+} */
+
+
+.property-detail {
+display: inline-block;
+position: relative;
+width: 40%;
+margin-bottom: 30px;
+border-radius: 6px;
+color:  #8e2ad6;;
+background: rgb(230, 228, 228);
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+font-family: Fantasy;
+}
+
+.bedroom, .bathrooms, .prices, .sizes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.types {
+    padding: 10px;
+}
+
+.descriptions {
+    font-size: 12px;
+    padding: 10px;
+}
+
+img {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    padding: 20px;
+    margin-right: 100px;
+}

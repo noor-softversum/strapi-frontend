@@ -1,0 +1,54 @@
+.Property-home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 2px 16px;
+}
+
+.property-card {
+    background-color: #8e2ad6;
+    align-items: flex-start;
+    transition: all 0.3s 0s ease-in;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.bedrooms, .bathroom, .price, .size {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.type {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.description {
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.footer {
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.readmore {
+    align-content: center;
+}
+.imageall {
+    width: 88%;
+    height: 200px;
+}

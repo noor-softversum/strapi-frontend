@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function ReviewDetails() {
   return (
-    <div>Review Details</div>
+    <h3>Review Details</h3>
   )
 }
