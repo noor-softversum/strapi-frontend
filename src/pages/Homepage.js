@@ -11,9 +11,10 @@ export default function Homepage() {
         <div className='Property-home'>
             {data.data.map(properties => (
                 <div key={properties.id} className='property-card'>
-                    <img className='imageall' src={'http://localhost:1337'+ properties.attributes.image.data.attributes.url} alt="property" />
+                    {properties.attributes.image.data.map(img => (
+                        <img className='imageall' src={'http://localhost:1337' + img.attributes.url} alt="property" />
+                    ))} 
                     <h4 className='type'>Type: {properties.attributes.Type}</h4>
-                    {/* <p className='description'>Description:{properties.attributes.Description.substring(0,50)}....</p> */}
                     <p className='bedrooms'> Bedrooms: {properties.attributes.Bedrooms}</p>
                     <p className='bathroom'>Bathrooms: {properties.attributes.Bathroom}</p>
                     <p className='price'>Price: {properties.attributes.Price}</p>

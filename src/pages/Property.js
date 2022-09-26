@@ -8,10 +8,12 @@ export default function Property() {
     if (loading) return <p>Loading....</p>
     if (loading) return <p>{error}</p>
 
-    console.log(data)
+    console.log(data.data.attributes)
     return (
         <div className='property-detail'>
-            <img className="images" src={'http://localhost:1337' + data.data.attributes.image.data.attributes.url} alt="property" />
+            {data.data.attributes.image.data.map(img => (
+            <img className="images" src={'http://localhost:1337' + img.attributes.url} alt="property" />
+            ))}
             <h4 className='types'>Type: {data.data.attributes.Type}</h4>
             <p className='descriptions'>Description:{data.data.attributes.Description}</p>
             <p className='bedroom'> Bedrooms: {data.data.attributes.Bedrooms}</p>
